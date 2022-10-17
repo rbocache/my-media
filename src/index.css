@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
 }
 
 code {
@@ -27,13 +28,21 @@ code {
 }
 
 .header .logo {
-  flex-grow: 2;  
+  flex-grow: 2;
+  display: flex;
+  align-items: center;  
 }
 
-.header .logo span {
+.header .logo img {
+  width: 100px;
+  height: auto;
+}
+
+.header .logo h3 {
   display: block;
-  font-size: 50px;
-  font-weight: bolder;
+  flex-basis: 120px;
+  margin-left: 20px;
+  font-weight: 400;
 }
 
 .header nav {
@@ -63,4 +72,16 @@ code {
 
 .header a:hover {
   color: #fa4529;
+}
+
+.content {
+  min-height: 71vh;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 25px;
+  margin-top: 35px;
+  color:#444;
 }

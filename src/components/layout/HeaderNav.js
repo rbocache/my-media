@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from '../../images/LogoApp.png'; 
 
 export const HeaderNav = () => {
   return (
     <header className="header">
       <div className="logo">
-        <span>R
-        </span>
+        <img src={logo} alt="Imagen del logo" />
         <h3>Biblioteca de Raül Bocache</h3>
       </div>
 
