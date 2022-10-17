@@ -5,7 +5,8 @@ export const HeaderNav = () => {
   return (
     <header className="header">
       <div className="logo">
-        <span></span>
+        <span>R
+        </span>
         <h3>Biblioteca de Raül Bocache</h3>
       </div>
 
