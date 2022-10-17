@@ -12,11 +12,11 @@ export const HeaderNav = () => {
 
       <nav>
         <ul>
-          <li><NavLink to="/mediateca">Mediateca</NavLink></li>
-          <li><NavLink to="/musica">Música</NavLink></li>
-          <li><NavLink to="/peliculas">Películas</NavLink></li>
-          <li><NavLink to="/series">Series</NavLink></li>
-          <li><NavLink to="/documentales">Docus</NavLink></li>
+          <li><NavLink to="/mediateca" className={({isActive}) => isActive ? "active" : ""}>Mediateca</NavLink></li>
+          <li><NavLink to="/musica" className={({isActive}) => isActive ? "active" : ""}>Música</NavLink></li>
+          <li><NavLink to="/peliculas" className={({isActive}) => isActive ? "active" : ""}>Películas</NavLink></li>
+          <li><NavLink to="/series" className={({isActive}) => isActive ? "active" : ""}>Series</NavLink></li>
+          <li><NavLink to="/documentales" className={({isActive}) => isActive ? "active" : ""}>Docus</NavLink></li>
         </ul>
       </nav>
     </header>

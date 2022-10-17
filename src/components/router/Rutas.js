@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter, NavLink } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { Documentales } from "../Documentales";
 import { Mediateca } from "../Mediateca";
 import { Footer } from "../layout/Footer";
@@ -17,7 +17,7 @@ export const Rutas = () => {
       {/* CONTENIDO CENTRAL*/}
       <section className="content">
         <Routes>
-          <Route path="/" element={<Mediateca />} />
+          <Route path="/" element={<Navigate to="/mediateca" />} />
           <Route path="/mediateca" element={<Mediateca />} />
           <Route path="/musica" element={<Musica />} />
           <Route path="/peliculas" element={<Peliculas />} />
