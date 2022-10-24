@@ -28,8 +28,9 @@ code {
 }
 
 .header .logo {
-  flex-grow: 2;
+  flex-grow: 1;
   display: flex;
+  flex-basis: ;
   align-items: center;  
 }
 
@@ -43,6 +44,16 @@ code {
   flex-basis: 120px;
   margin-left: 20px;
   font-weight: 400;
+}
+
+.header .actions {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-around;
+}
+
+.header .actions svg {
+  font-size: 35px;
 }
 
 .header nav {
@@ -85,13 +96,6 @@ code {
   margin-right: 20px;
 }
 
-.content .aside {
-  flex-basis: 20%;
-  
-}
-
-
-
 .footer {
   text-align: center;
   font-size: 14px;
@@ -99,3 +103,4 @@ code {
   margin-top: 35px;
   color:#444;
 }
+
