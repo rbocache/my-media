@@ -7,6 +7,7 @@ import { HeaderNav } from "../layout/HeaderNav";
 import { Musica } from "../Musica";
 import { Peliculas } from "../Peliculas";
 import { Series } from "../Series";
+import { Aside } from "../Aside";
 
 export const Rutas = () => {
   return (
@@ -16,14 +17,19 @@ export const Rutas = () => {
 
       {/* CONTENIDO CENTRAL*/}
       <section className="content">
-        <Routes>
-          <Route path="/" element={<Navigate to="/mediateca" />} />
-          <Route path="/mediateca" element={<Mediateca />} />
-          <Route path="/musica" element={<Musica />} />
-          <Route path="/peliculas" element={<Peliculas />} />
-          <Route path="/series" element={<Series />} />
-          <Route path="/documentales" element={<Documentales />} />
-        </Routes>
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<Navigate to="/mediateca" />} />
+            <Route path="/mediateca" element={<Mediateca />} />
+            <Route path="/musica" element={<Musica />} />
+            <Route path="/peliculas" element={<Peliculas />} />
+            <Route path="/series" element={<Series />} />
+            <Route path="/documentales" element={<Documentales />} />
+          </Routes>
+        </main>
+        <aside className="aside">
+          <Aside />
+        </aside>
       </section>
 
       {/* FOOTER */}

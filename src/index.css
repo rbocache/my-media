@@ -77,7 +77,20 @@ code {
 
 .content {
   min-height: 71vh;
+  display: flex;
 }
+
+.content .main {
+  flex-basis: 80%;
+  margin-right: 20px;
+}
+
+.content .aside {
+  flex-basis: 20%;
+  
+}
+
+
 
 .footer {
   text-align: center;
